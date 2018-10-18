@@ -3098,7 +3098,7 @@ input, select, textarea {
 				-ms-transition-delay: 0s;
 				transition-delay: 0s;
 				display: block;
-				margin: -4em 0em 0.5em 0em; /*logo location - top margin, left, bottom, size */
+				margin: -3em 0em 0.5em 0em; /*logo location - top margin, left, bottom, size */
 			}
 
 				#header.alt .logo img {
