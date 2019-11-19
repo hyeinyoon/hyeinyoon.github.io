@@ -103,12 +103,14 @@ input, select, textarea {
 
 	body {
 		background-color: #2E86C1;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #B37D4E 5%, #438496 95%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #B37D4E 5%, #438496 95%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #B37D4E 5%, #438496 95%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #B37D4E 45%, #438496 90%);
+		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #6f9681 5%, #9782b3 95%);
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #6f9681 5%, #9782b3 95%);
+		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #6f9681 5%, #9782b3 95%);
+		background-image: url("images/overlay.png"), linear-gradient(45deg, #6f9681 45%, #9782b3 90%); /* main background color*/
 /*		background-image: url("images/overlay.png"), linear-gradient(45deg, #E9C893 5%, #1E392A 95%); */  
 	}
+/* first part: original bottom background (orange): #B37D4E*/
+/* second part: original top background (aquablue): #438496*/
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
@@ -124,7 +126,7 @@ input, select, textarea {
 /* Type */
 
 	body {
-		background-color: ##2E86C1; /* main background color*/
+		background-color: #2E86C1; /* main background color*/
 		color: rgba(255, 255, 255, 0.65);
 	}
 
