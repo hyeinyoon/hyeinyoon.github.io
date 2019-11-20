@@ -1,5 +1,5 @@
-Modified: Hyein Yoon (October 1, 2018)
-Email: hyein.yn (at) gmail (dot) com
+Modified: Hyein Yoon (November 20, 2019)
+Email: hyein.yoon (at) sydney.edu.au
 
 Original: Stellar by HTML5 UP
 html5up.net | @ajlkn
