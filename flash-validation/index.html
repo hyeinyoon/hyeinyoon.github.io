@@ -12,8 +12,6 @@
                       color: black;
                   }
                   h2 {
-		      font-family: 'Helvetica Neue';
-                      letter-spacing: -1px
 		      color: black;
                   }
                   h4 {
@@ -74,8 +72,8 @@
 		<br>- 2) Embedded HI absorption/emission lines? How many lines are expected in the field? Are they negligible in flux/rms measurements of each beam?
 		<br>- 3) Validation Checking with extracted spectral line domain? With well-known strong radio sources in the field?
 		<br>- 4) Any other additional items to be required (e.g. FIRST detections in FOV)?
-		<br>- 5) Goal of the tool: The tool does not make judgements (i.e. the data quality is good or bad). Do we aim to provide any metrics or quantify the data quality?
-		</h4>
+		<br>- 5) Goal of the tool: The tool does not make judgements (i.e. the data quality is good or bad). Do we aim to provide any metrics or quantify data quality?
+		<br><br></h4>
               </p><h2 align="middle">Observation</h2>
                     <table width="100%" border="1">
                     <tr>
@@ -143,10 +141,10 @@
               </table>
                                              
               <p align=left>
-              <h4 align="left">- col 1: from ./slurmOutput/<latest>.sh
+              <h4 align="left">- col 1: from ./slurmOutput/*.sh - if more than one version of ASKAPsoft is used for the whole reduction, the latest one is reported.
 	  	<br>- col 2: from ./diagnostics/cubestats-/cubeStats*linmos.contsub.txt (mosaic contsub)
 		<br>- col 3-4: from ./metadata/mslist-Science*.txt
-		<br>- col 5: from FITS-datacube (NOW: continuum subtracted beam00 cube - Nov 22 ver; too large beam size? depending on robust parameter?)
+		<br>- col 5: from FITS-datacube (CURRENT VERSION: continuum subtracted beam00 cube - Nov 22 ver.; too large beam size? depending on robust parameter?)
 		<br>- col 6: from ./SpectralCube_BeamLogs/beamlogs*.txt
 		<br>- col 6: Bi-qing's notes: Evaluating each channel of each beam if ASKAPSoft fails to synthesize the beam, bmaj and bmin to 30 arcsec. bmaj and bmin for the first few channels are always zero.
 		<br>- col 7: from ./flagSummary/*.flagSummary
@@ -193,14 +191,14 @@
               </table>
                                              
               <p align=left>
-              <h4 align="left">- col 1-3: beamMinMax Plots 
+              <h4 align="left">- col 1-3: from beamMinMax Plots 
 		<br>- why one percentile?</h4>
               </p></td>
                     </tr>
                     </table>
                     <table width="100%" border="1">
                     <tr>
-                    <th colspan="4">Continuum Beam Cube</th>
+                    <th colspan="4">Continuum Subtracted Beam Cube</th>
                    </tr>
                     <tr align="middle">
                     <td>
@@ -217,8 +215,8 @@
               </table>
                                              
               <p align=left>
-              <h4 align="left">- col 1: beamMinMax Plots 
-	 	<br>- col 2: CubeStat*contsub.txt</h4>
+              <h4 align="left">- col 1: from beamMinMax Plots 
+	 	<br>- col 2: from CubeStat*contsub.txt</h4>
               </p></td>
                     </tr>
                     </table>
@@ -250,12 +248,12 @@
               </table>
                                              
               <p align=left>
-              <h4 align="left">- col 1-3: cubePlots
-	      <br>- col 4: CubeStat*contsub.txt</h4>
+              <h4 align="left">- col 1-3: from cubePlots
+	      <br>- col 4: from CubeStat*contsub.txt</h4>
               </p></td> 
               </tr>
               </table>
-              <h2 align="middle">FIRST sources within 6x6 sq degree</h2>
+              <h2 align="middle">FIRST sources within 6 x 6 sq degree</h2>
               <table>
               <tr align="middle">
               <td id="cell">
@@ -273,7 +271,7 @@
               </p></td> 
               </tr>
               </table>
-              <h2 align="middle">NVSS sources within 6x6 sq degree</h2>
+              <h2 align="middle">NVSS sources within 6 x 6 sq degree</h2>
               <table>
               <tr align="middle">
               <td id="cell">
@@ -289,17 +287,3 @@
               <h4 align="left">- data from Vizier NVSS (Condon+ 1998)
               <br>- a resolution of 45 arcsec</h4>
               </p>
-              </td>
-              </tr>
-              </table>
-                                             
-              <p align=left>
-              <br>* If more than one version of ASKAPsoft is used for the whole reduction, the latest one is reported.<br>
-<!--          ** Does not take into account field rotation. <br><br>  
-              Generated at 2019-12-11 17:12:58.269747 <br>
-              <i> Report bugs to 
-              <a href="mailto:biqing.for@icrar.org">Bi-Qing For</a></i> --!>
-              </p>
-
-              </body>
-              </html>
