@@ -68,11 +68,13 @@
                                              
               <p align=left>
               <h4 align="left">Notes:
-		<br>- This tool uses ASKAPsoft outputs. FITS-datacubes are needed only for getting bmaj and bmin (from the header).
-		<br>- Total bandwidth: 288MHz (FLASH) vs 12MHz (WALLABY) - Should we split the long bandwidth into smaller units for validation check?
-		<br>- Embedded HI absorption/emission lines? How many lines are expected in the field? Are they siginificant?
-		<br>- Validation Checking with extracted spectral line domain? With well-known strong radio sources in the field?
-		<br>- Goal of the tool: The tool does not make judgements (i.e. the data quality is good or bad). Do we aim to provide any metrics or quantify the data quality?
+		<br>- This tool uses ASKAPsoft outputs. FITS-datacubes are needed only for getting major and minor beam sizes (from the header).
+		<br>- The values and plots in the tables below are not currently correct - I used dummy files for some cases to run the script successfully.
+		<br>- 1) Total bandwidth: 288-MHz (FLASH) vs 12-MHz (WALLABY) - Should we split the long bandwidth into smaller units for validation check?
+		<br>- 2) Embedded HI absorption/emission lines? How many lines are expected in the field? Are they negligible in flux/rms measurements of each beam?
+		<br>- 3) Validation Checking with extracted spectral line domain? With well-known strong radio sources in the field?
+		<br>- 4) Any other additional items to be required (e.g. FIRST detections in FOV)?
+		<br>- 5) Goal of the tool: The tool does not make judgements (i.e. the data quality is good or bad). Do we aim to provide any metrics or quantify the data quality?
 		</h4>
               </p><h2 align="middle">Observation</h2>
                     <table width="100%" border="1">
@@ -102,7 +104,10 @@
               </table>
                                              
               <p align=left>
-              <h4 align="left">- all columns: from ./metadata/mslist-*.txt</h4>
+              <h4 align="left">- col 1: from input by user
+		<br>- col 2-8: from ./metadata/mslist-<date>*.txt
+		<br>- col 9: from ./metadata/mslist-Science*.txt
+		</h4>
               </p></td>
                     </tr>
                     </table>
@@ -141,11 +146,11 @@
               <h4 align="left">- col 1: from ./slurmOutput/<latest>.sh
 	  	<br>- col 2: from ./diagnostics/cubestats-/cubeStats*linmos.contsub.txt (mosaic contsub)
 		<br>- col 3-4: from ./metadata/mslist-Science*.txt
-		<br>- col 5: from FITS data cube (NOW: continuum subtracted beam00 cube - Nov 22 ver; too large beam size? robust parameter?)
+		<br>- col 5: from FITS-datacube (NOW: continuum subtracted beam00 cube - Nov 22 ver; too large beam size? depending on robust parameter?)
 		<br>- col 6: from ./SpectralCube_BeamLogs/beamlogs*.txt
 		<br>- col 6: Bi-qing's notes: Evaluating each channel of each beam if ASKAPSoft fails to synthesize the beam, bmaj and bmin to 30 arcsec. bmaj and bmin for the first few channels are always zero.
 		<br>- col 7: from ./flagSummary/*.flagSummary
-		<br>- col 8: from ./flagSummary/*.flagSummary (flagging fraction) + theoretical rms estimation (based on input values)		
+		<br>- col 8: from ./flagSummary/*.flagSummary (flagged fraction) + theoretical rms estimation (based on input values)		
 		</h4> 
               </p></td>
                     </tr>
@@ -159,15 +164,15 @@
                     </tr>
                     <tr align="middle">
                     <td>
+                    <a href="diagnostics/beamMinMax_image.restored.i.SB10250.cube.FLASH_G9A_long.png" target="_blank"><img src="Figures/thumb_70_beamMinMax_image.restored.i.SB10250.cube.FLASH_G9A_long.png" width="70" height="70" alt="thumbnail"></a>
+                    <br><p>Min, Max, 1 percentile</p>
+                    </td>
+                    <td>
                     <a href="diagnostics/beamMinMax_image.restored.i.SB10250.cube.FLASH_G9A_long.contsub.png" target="_blank"><img src="Figures/thumb_70_beamMinMax_image.restored.i.SB10250.cube.FLASH_G9A_long.contsub.png" width="70" height="70" alt="thumbnail"></a>
                     <br><p>Min, Max, 1 percentile</p>
                     </td>
                     <td>
                     <a href="diagnostics/beamMinMax_residual.i.SB10250.cube.FLASH_G9A_long.png" target="_blank"><img src="Figures/thumb_70_beamMinMax_residual.i.SB10250.cube.FLASH_G9A_long.png" width="70" height="70" alt="thumbnail"></a>
-                    <br><p>Min, Max, 1 percentile</p>
-                    </td>
-                    <td>
-                    <a href="diagnostics/beamMinMax_image.restored.i.SB10250.cube.FLASH_G9A_long.png" target="_blank"><img src="Figures/thumb_70_beamMinMax_image.restored.i.SB10250.cube.FLASH_G9A_long.png" width="70" height="70" alt="thumbnail"></a>
                     <br><p>Min, Max, 1 percentile</p>
                     </td>
                     <tr align="middle">
@@ -182,7 +187,15 @@
                     <td>
                     <a href="diagnostics/beamNoise_residual.i.SB10250.cube.FLASH_G9A_long.png" target="_blank"><img src="Figures/thumb_70_beamNoise_residual.i.SB10250.cube.FLASH_G9A_long.png" width="70" height="70" alt="thumbnail"></a>
                     <br><p>Stdev, MADFM</p>
-                    </td>
+                    
+              </td>
+              </tr>
+              </table>
+                                             
+              <p align=left>
+              <h4 align="left">- col 1-3: beamMinMax Plots 
+		<br>- why one percentile?</h4>
+              </p></td>
                     </tr>
                     </table>
                     <table width="100%" border="1">
@@ -204,8 +217,8 @@
               </table>
                                              
               <p align=left>
-              <h4 align="left">- all columns: beamPlots & cubeStats
-	      <br>- why one percentile?</h4>
+              <h4 align="left">- col 1: beamMinMax Plots 
+	 	<br>- col 2: CubeStat*contsub.txt</h4>
               </p></td>
                     </tr>
                     </table>
@@ -238,7 +251,7 @@
                                              
               <p align=left>
               <h4 align="left">- col 1-3: cubePlots
-	      <br>-col 4: CubeStat*contsub.txt</h4>
+	      <br>- col 4: CubeStat*contsub.txt</h4>
               </p></td> 
               </tr>
               </table>
@@ -283,7 +296,7 @@
               <p align=left>
               <br>* If more than one version of ASKAPsoft is used for the whole reduction, the latest one is reported.<br>
 <!--          ** Does not take into account field rotation. <br><br>  
-              Generated at 2019-12-11 14:27:57.377106 <br>
+              Generated at 2019-12-11 17:12:58.269747 <br>
               <i> Report bugs to 
               <a href="mailto:biqing.for@icrar.org">Bi-Qing For</a></i> --!>
               </p>
