@@ -2,7 +2,7 @@
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400";
 
 /*
-	Modified: Hyein Yoon (Nov 15, 2019)
+	Modified: Hyein Yoon (Feb 28, 2021)
 	Email: hyein.yoon (at) sydney.edu.au
 
 	Stellar by HTML5 UP
@@ -106,7 +106,7 @@ input, select, textarea {
 		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #6f9681 5%, #9782b3 95%);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #6f9681 5%, #9782b3 95%);
 		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #6f9681 5%, #9782b3 95%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #6f9681 45%, #9782b3 90%); /* main background color*/
+		background-image: url("images/overlay.png"), linear-gradient(30deg, #335e4a 45%,#fff8d4 90%); /* main background color*/
 /*		background-image: url("images/overlay.png"), linear-gradient(45deg, #E9C893 5%, #1E392A 95%); */  
 	}
 /* first part: original bottom background (orange): #B37D4E*/
@@ -213,7 +213,7 @@ input, select, textarea {
 		}
 
 	h1 {
-		font-size: 2.5em;
+		font-size: 1.8em;
 		line-height: 1.2;
 	}
 
