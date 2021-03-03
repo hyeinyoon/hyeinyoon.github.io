@@ -59,18 +59,11 @@
 		    </tr></table>
               </td>
               </tr>
-                                                     
+                 
+                                    
+<table width="100%">
 <h4 align="left">
-
-<table>
-<tr>
-<td></td><td></td>
-<td><h4 align="middle">
-<a href="figures/flash_status_allsky_updated_210302.png" target="_blank"><img src="figures/flash_status_allsky_updated_210302.png" width="220" height="120" alt="thumbnail"></a><br>(click to enlarge the footprint)
-</h4>
-</td>
 <td>
- <p align=left>
               <ul>
               <h4 align="left">
                 <li>Current status: <b>14 dataset</b> in CASDA (2 Mar 2021)
@@ -78,16 +71,58 @@
                 <br>- GAMA 12A: 13306 (6hr), 13334 (2hr) / GAMA 12B: - (6hr), 13335 (2hr) 
                 <br>- GAMA 15A: 13294 (6hr), 13336 (2hr) / GAMA 15B: - (6hr), 13273 (2hr)
                 <br>- 351P: 10849 (2hr), 719P: 13271 (2hr) 159P: 13278 (2hr), 197P: 15209 (2hr)<br><br>
-	      </h4> 
-              </ul>
+<li>Continuum image overlays and Selavy catalogues summary: <a href="https://docs.google.com/document/d/1P9HqP4kvGDSnXXPUeo9mxgwFVfauknTeuuNFnMo2HmM/edit" target="_blank">&rarr; Go to the page!</a>
+		<li>FLASH Pilot Survey observations summary: <a href="https://docs.google.com/spreadsheets/d/1sVXtYuIshag9cUu-L64WLwyNTsZpeDNk-O3U97jkR8k/edit#gid=0" target="_blank">&rarr; Go to the page!</a>
+		</h4> 
+</ul>
 </td>
-</tr>
+<td>
+              <ul>
+                <li>Table 1 description:
+		<br>- col (1): Footprint
+                <br>- col (2): Noise vs R.A. (all components from all SBIDs, median noise from mid 5184 channels)
+                <br>- col (3): Noise vs Declination (R.A./Dec. of 6 hr GAMA fields are shifted arbitrarily to visualize)
+                <br>- col (4): Noise vs Ducting
+		<br>- col (5): Noise vs Day/Night observation<br><br>
+</ul>
+</td>
+	      </h4> 
+
 </table>
 
-              <p align=left>
+Table 1. Overview from all SBIDs
+<table width="100%" border="1">
+                    <tr align="middle">
+                    <th>Footprint<br>(1)</th> 
+                    <th>Noise vs R.A.<br>(2)</th>         
+                    <th>Noise vs Declination<br>(3)</th>
+                    <th>Noise vs Ducting<br>(4)</th>
+                    <th>Noise vs Time of day (UT)<br>(5)</th>
+                    </tr>
+
+<tr align="middle">
+<td><h4 align="middle">
+<a href="figures/all_sbids/flash_status_allsky_updated_210302.png" target="_blank"><img src="figures/all_sbids/flash_status_allsky_updated_210302.png" width="220" height="120" alt="thumbnail"></a><br>(click to enlarge the plot)
+</h4>
+</td>
+                    <td>
+<a href="figures/all_sbids/rms_vs_ra.png" target="_blank"><img src="figures/all_sbids/rms_vs_ra.png" width="220" height="120" alt="thumbnail"></a><br>                    </td>
+                    <td>
+<a href="figures/all_sbids/rms_vs_declination.png" target="_blank"><img src="figures/all_sbids/rms_vs_declination.png" width="220" height="120" alt="thumbnail"></a><br>
+                    </td>
+                    <td>
+<a href="figures/all_sbids/rms_vs_ducting.png" target="_blank"><img src="figures/all_sbids/rms_vs_ducting.png" width="220" height="120" alt="thumbnail"></a><br>
+                    </td>
+                    <td>
+<a href="figures/all_sbids/rms_vs_daynight.png" target="_blank"><img src="figures/all_sbids/rms_vs_daynight.png" width="220" height="120" alt="thumbnail"></a><br>
+                    </td>
+                     
+
+<table width="100%">
+<br><br>
               <ul>
               <h4 align="left">
-		<li>Table description:
+		<li>Table 2 description:
 		<br>- col (1): Field (SBID) and continuum image overlaid with the position of selavy bright component (fpeak > 100 mJy/beam) 
                 <br>- col (2): Median noise of individual components across the first/mid/last 5184 channels, Blue: inner region (d < 3.2 deg), red: outer region (d > 3.2 deg)
                 <br>- col (3): Median noise of all components across the first/mid/last 5184 channels (yellow: from the individuals)
@@ -95,15 +130,15 @@
 		<br>- col (5): Noise as a function of distance from the field centre<br><br>
 <!--		<li>Download everything in this page - *.zip, <b>except some pdf files (> 25 MB) of col (2)</b>: <a href="noise_measurement_2mar2021.zip" download>&rarr; Download</a>
 --!>
-		<li>Continuum image overlays and Selavy catalogues summary: <a href="https://docs.google.com/document/d/1P9HqP4kvGDSnXXPUeo9mxgwFVfauknTeuuNFnMo2HmM/edit" target="_blank">&rarr; Go to the page!</a>
-		<li>FLASH Pilot Survey observations summary: <a href="https://docs.google.com/spreadsheets/d/1sVXtYuIshag9cUu-L64WLwyNTsZpeDNk-O3U97jkR8k/edit#gid=0" target="_blank">&rarr; Go to the page!</a>
 		</h4> 
 </ul>
-              </p></td>
-                    </tr>
-                    </table width="100%"><br>
+                    </table width="100%">
+
+
 <!--                <h2 align="middle">rms measurement - noise spectra</h2>
 --!>
+
+Table 2. Details from individual SBIDs
                     <table width="100%" border="1">
                     <tr align="middle">
                     <th>Field (SBID)<br>(1)</th> 
