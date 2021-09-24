@@ -1,0 +1,82 @@
+beam00
+ none 
+beam01
+ak25
+ak31
+beam02
+ none 
+beam03
+ak25
+ak31
+beam04
+ none 
+beam05
+ none 
+beam06
+ none 
+beam07
+ none 
+beam08
+ak21
+ak25
+beam09
+ none 
+beam10
+ none 
+beam11
+ none 
+beam12
+ none 
+beam13
+ none 
+beam14
+ none 
+beam15
+ none 
+beam16
+ none 
+beam17
+ak25
+ak29
+beam18
+ none 
+beam19
+ak19
+ak25
+beam20
+ none 
+beam21
+ak25
+ak34
+beam22
+ none 
+beam23
+ none 
+beam24
+ak25
+ak27
+beam25
+ none 
+beam26
+ none 
+beam27
+ none 
+beam28
+ none 
+beam29
+ak13
+ak25
+beam30
+ none 
+beam31
+ak12
+ak25
+beam32
+ak21
+ak25
+beam33
+ none 
+beam34
+ none 
+beam35
+ none 
